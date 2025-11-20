@@ -16,7 +16,7 @@ description: >
   <a href="https://github.com/olgagaffarova">View My GitHub Profile</a><br>
   <a href="https://www.linkedin.com/in/gaffarova/">View My LinkedIn Profile</a>
 
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0 
 
 plugins:
   - jekyll-remote-theme
