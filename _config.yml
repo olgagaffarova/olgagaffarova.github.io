@@ -1,14 +1,20 @@
-title: Olga Gaffarova # your name (or website title) here
-logo: "/images/logo.png" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
-  Product Data Analyst
-  <br><br>
+title: Olga Gaffarova
+logo: "/images/logo.png"
 
-  
-  <br>Product Data Analyst with a decade of international experience in video production, social media, and event industry (including 3D mapping and international film festival). Former Producer and Director’s Representative skilled in stakeholder management, cross-functional coordination, and creative production. Now combining this background with strong analytical capabilities in Python and data visualization.<br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
-  
+description: >
+  Product Data Analyst<br><br>
+  Product Data Analyst with a decade of international experience 
+  in video production, social media, and event industry (including 
+  3D mapping and international film festival). Former Producer and 
+  Director’s Representative skilled in stakeholder management, 
+  cross-functional coordination, and creative production. Now 
+  combining this background with strong analytical capabilities in 
+  Python and data visualization.<br>
+  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a>
+
 remote_theme: pages-themes/minimal@v0.2.0
+
 plugins:
-- jekyll-remote-theme
-google_analytics: G-XM7MMRB5V7 # your Google Analytics tracking ID here
+  - jekyll-remote-theme
+
+google_analytics: G-XM7MMRB5V7
