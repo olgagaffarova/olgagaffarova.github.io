@@ -7,6 +7,9 @@ description: |
       max-width: 120px !important;
       width: 120px !important;
     }
+    .view small {
+      display: none !important;
+    }
   </style>
   
   <h2 style="margin-top: 0; margin-bottom: 10px; font-weight: 600;">Product Data Analyst</h2>
