@@ -88,4 +88,4 @@ When evaluating non-elite universities, consider:
 
 ---
 ## Project Files
-For more details see [GitHub Flavored Markdown](https://github.com/olgagaffarova/QS-University-Rankings-2026).
+For more details see [GitHub Project Folder](https://github.com/olgagaffarova/QS-University-Rankings-2026).
