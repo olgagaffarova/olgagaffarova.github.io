@@ -1,10 +1,12 @@
 ## Portfolio
+
 ---
+
 ### QS World University Rankings 2026
+
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <a href="/sample_page">
-    <img src="images/qs2.png" alt="QS Project" style="width:300px; margin-top:5px; cursor: pointer;">
-  </a>
+  <img src="images/qs2.png" alt="QS Project" style="width:180px; margin-top:5px;">
+
   <div>
     <a href="/sample_page"><strong>QS World University Rankings 2026</strong></a>
     <p>
@@ -18,10 +20,10 @@
 ---
 
 ### Citibike Strategy
+
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <a href="/sample_page2">
-    <img src="images/citibike3.png" alt="CitiBike Project" style="width:300px; margin-top:5px; cursor: pointer;">
-  </a>
+  <img src="images/citibike3.png" alt="CitiBike Project" style="width:180px; margin-top:5px;">
+
   <div>
     <a href="/sample_page2"><strong>Citibike Strategy</strong></a>
     <p>
