@@ -2,15 +2,17 @@
 
 ## Project objective
 This analysis examines CitiBike's 2022 ridership to improve bike availability, optimize fleet management, and identify expansion opportunities across New York City.
+
 ## Scope
 - Weather impact and fleet optimization (Nov–Apr)  
 - Identifying main routes and problem stations  
 - Predictive rebalancing strategy  
 - Waterfront expansion opportunities  
 - Actionable recommendations
+  
 ---
 
-### 1. Pareto analysis of CitiBike routes (80/20 rule)
+### Pareto analysis of CitiBike routes (80/20 rule)
 To identify key corridors carrying most system traffic, we applied Pareto analysis to all Origin → Destination (OD) routes.
 
 **Approach:**
@@ -31,7 +33,7 @@ These high-traffic corridors reveal:
 
 ---
 
-### 2. Station imbalance analysis (rentals vs returns)
+### Station imbalance analysis (rentals vs returns)
 To identify stations that consistently run out of bikes or become overfilled, we calculated net flow for our top 14% most popular stations (which account for ~80% of demand).
 
 **Net Flow = Trips starting at station – Trips ending at station**
@@ -50,7 +52,7 @@ Relocate bikes from overflowing stations to shortage stations to reduce shortage
 
 ---
 
-### 3. Predictive rebalancing strategy
+### Predictive rebalancing strategy
 This analysis shows dynamic bike redistribution needs based on actual usage patterns. By analyzing net flow at each station, we predict where bikes need delivery or collection.
 
 We computed the **80th percentile (top 20%) activity threshold** for each month, focusing on operationally critical stations where rebalancing decisions matter most.
@@ -70,7 +72,7 @@ We computed the **80th percentile (top 20%) activity threshold** for each month,
 
 ---
 
-### 4. Waterfront expansion opportunities
+### Waterfront expansion opportunities
 We explored spatial demand clusters along the Hudson and East Rivers to identify where new stations could relieve congestion and serve riders. This analysis applies a **supply–demand framework** to identify capacity gaps.
 
 **Methodology**
@@ -91,7 +93,7 @@ Define Waterfront Zones (example):
 
 ---
 
-#### Supply analysis (shoreline-based)
+### Supply analysis (shoreline-based)
 - **Total stations:** 1,757  
 - **Waterfront stations (≤ 400m):** 268  
 - **Waterfront supply share:** 15.3%
@@ -100,14 +102,14 @@ Define Waterfront Zones (example):
 
 ---
 
-#### Top waterfront Origin → Destination flows
+### Top waterfront Origin → Destination flows
 The Sankey diagram below highlights the top 20 waterfront routes with highest trip counts. Each connection represents major flow between two waterfront stations.
 
 ![Waterfront Flows Sankey](images/citychart6.png)
 
 ---
 
-#### Origin–Destination matrix — top waterfront routes
+### Origin–Destination matrix — top waterfront routes
 The matrix below shows trip volumes between the busiest waterfront station pairs. Darker cells indicate stronger flow intensity (higher trip counts).
 
 ![OD Matrix](images/citychart7.png)
@@ -129,7 +131,7 @@ Waterfront stations make up only **15.3%** of the network, while nearly **24%** 
 - Improve accessibility for weekend and tourist riders  
 - Balance network capacity between inner-city and riverside zones
 
-**Analysis Method**
+## Analysis Method
 Programming: Python
 Analysis: Data Cleaning, Wrangling, Visualization, Regression Analysis & Modeling
 Techniques: Grouping & Aggregating Data, Pareto Analysis, Supply-Demand Gap Analysis
