@@ -78,13 +78,16 @@ When evaluating non-elite universities, consider:
 2. **Sustainability initiatives** — Does the school align with your values around ESG?
 
 ---
-
 ## Analysis Method
 - **Python** (pandas, NumPy, matplotlib, seaborn, plotly, scikit-learn, statsmodels) for analysis & visualization
 - Data cleaning, merging & creation of derived variables
 - Exploratory Data Analysis (EDA) to uncover trends & patterns
 - **Tableau** for interactive dashboards
 - **Excel** for supplementary analysis
+
+---
+## Tableau Dashboard
+To check dashboard [Tableau Story](https://public.tableau.com/app/profile/ola.gaffarova/viz/UNI_17581014299910/Story1).
 
 ---
 ## Project Files
