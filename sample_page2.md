@@ -2,16 +2,12 @@
 
 ## Project objective
 This analysis examines CitiBike's 2022 ridership to improve bike availability, optimize fleet management, and identify expansion opportunities across New York City.
-
----
-
 ## Scope
 - Weather impact and fleet optimization (Nov–Apr)  
 - Identifying main routes and problem stations  
 - Predictive rebalancing strategy  
 - Waterfront expansion opportunities  
 - Actionable recommendations
-
 ---
 
 ### 1. Pareto analysis of CitiBike routes (80/20 rule)
@@ -134,7 +130,5 @@ Waterfront stations make up only **15.3%** of the network, while nearly **24%** 
 - Improve accessibility for weekend and tourist riders  
 - Balance network capacity between inner-city and riverside zones
 
-**Link to project notebooks:** https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022
-
-
-
+## Project Files
+For more details see [GitHub Project Folder](https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022).
