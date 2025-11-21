@@ -113,7 +113,6 @@ The matrix below shows trip volumes between the busiest waterfront station pairs
 ![OD Matrix](images/citychart7.png)
 
 ---
-
 ## Recommendations
 Waterfront stations make up only **15.3%** of the network, while nearly **24%** of all trips start or end near the riverside. This indicates a **demand–supply gap of ~9 percentage points**.
 
@@ -129,6 +128,13 @@ Waterfront stations make up only **15.3%** of the network, while nearly **24%** 
 - Reduce bike shortages at popular leisure and commuter waterfront routes  
 - Improve accessibility for weekend and tourist riders  
 - Balance network capacity between inner-city and riverside zones
+
+**Analysis Method**
+Programming: Python
+Analysis: Data Cleaning, Wrangling, Visualization, Regression Analysis & Modeling
+Techniques: Grouping & Aggregating Data, Pareto Analysis, Supply-Demand Gap Analysis
+Visualization: Streamlit (Dashboard), Python (Kepler Maps, Matplotlib, Seaborn, Plotly)
+Libraries: pandas, NumPy, scikit-learn, statsmodels
 
 ## Project Files
 For more details see [GitHub Project Folder](https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022).
