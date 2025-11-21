@@ -7,8 +7,13 @@ description: |
       max-width: 120px !important;
       width: 120px !important;
     }
-    .view small {
+    .view p small,
+    .view small,
+    footer p,
+    footer small,
+    .wrapper small {
       display: none !important;
+      visibility: hidden !important;
     }
   </style>
   
