@@ -1,120 +1,187 @@
-# QS World University Rankings 2026
+# CitiBike NYC 2022 Ridership Analysis
 
 ## Skills & Tools
 
 - **Programming:** Python
 - **Analysis:** Data Cleaning, Wrangling, Visualization, Regression Analysis & Modeling
-- **Techniques:** Grouping & Aggregating Data
-- **Visualization:** Tableau (Dashboards, Maps, Story), Matplotlib, Seaborn, Plotly
+- **Techniques:** Grouping & Aggregating Data, Pareto Analysis, Supply-Demand Gap Analysis
+- **Visualization:** Streamlit (Dashboard), Python (Kepler Maps, Matplotlib, Seaborn, Plotly)
 - **Libraries:** pandas, NumPy, scikit-learn, statsmodels
 
 ---
 
-## Objective
+## Project Objective
 
-According to the QS methodology, the **Discovery and Research lens** carries the greatest weight (50%), with **Academic Reputation (AR)** as its key component (30%).
-
-**The goal of this analysis** is to explore which other scores contribute to success in AR, helping us better understand what drives rankings outside of the top tier.
+This analysis examines CitiBike's 2022 ridership to improve bike availability, optimize fleet management, and identify expansion opportunities across New York City.
 
 ---
 
 ## Scope
 
-- Global distribution of top universities (map) and descriptive statistics
-- Differences across quartiles of universities
-- Correlation patterns between indicators in each quartile
-- Which scores most strongly drive Academic Reputation (AR) in the middle quartiles
-- Recommendations for undergraduates based on findings
-
----
-
-## Analysis Method
-
-- **Python** (pandas, NumPy, matplotlib, seaborn, plotly, scikit-learn, statsmodels) for analysis & visualization
-- Data cleaning, merging & creation of derived variables
-- Exploratory Data Analysis (EDA) to uncover trends & patterns
-- **Tableau** for interactive dashboards
-- **Excel** for supplementary analysis
+- Weather Impact and Fleet Optimization (Nov–Apr)
+- Identifying Main Routes and Problem Stations
+- Predictive Rebalancing Strategy
+- Waterfront Expansion Opportunities
+- Actionable Recommendations
 
 ---
 
 ## Key Findings
 
-### 1. Understanding University Quartiles
+### 1. Pareto Analysis of CitiBike Routes (80/20 Rule)
 
-![University Quartiles Analysis](images/chart1.png)
+To identify key corridors carrying most system traffic, we applied Pareto analysis to all Origin → Destination (OD) routes.
 
-To better understand differences between universities, we split them into four quartiles:
+**Approach:**
+- Count total trips for every OD pair
+- Sort routes from highest to lowest volume
+- Calculate each route's % contribution to total traffic
+- Compute cumulative % to find where 80% of trips is reached
 
-- **Q1 (Top 25%)** – the highest-ranked universities
-- **Q2 (25–50%)** – upper-middle universities
-- **Q3 (50–75%)** – lower-middle universities
-- **Q4 (Bottom 25%)** – the lowest-ranked universities
+**Result:**  
+Only **14% of all routes account for 80% of total CitiBike trips**.
 
-We created correlation heatmaps to see how different QS scores relate to each other within each quartile.
+![Main CitiBike Routes](citychart1.png)
 
----
-
-### 2. Key Drivers of Academic Reputation Beyond the Top Tier
-
-![Correlation Analysis](images/chart2.png)
-
-The analysis reveals **2 indicators stand out for non-elite universities (Q2–Q3)**:
-
-#### **Employer Reputation (ER)** — 15% weighting
-Measures how institutions and their programs are viewed by employers via the Employer Survey.
-
-#### **Sustainability (SUS)** — 5% weighting
-New indicator (introduced ~2024) measuring environmental, social, and governance (ESG) factors. Looks at UN SDGs, campus sustainability projects, diversity & governance.
-
-#### **Citations per Faculty (CPF)** — 20% weighting
-Captures research output and visibility — average citations per academic staff, normalized by faculty size. Reflects scholarly publications, collaboration, and visibility in academic literature.
+These high-traffic corridors reveal:
+- Main commuter pathways
+- Areas with highest operational pressure
+- Priority corridors for rebalancing and infrastructure expansion
 
 ---
 
-### 3. Regression Analysis Results
+### 2. Station Imbalance Analysis (Rentals vs Returns)
 
-![Regression Analysis](images/chart3.png)
+To identify stations that consistently run out of bikes or become overfilled, we calculated net flow for our top 14% most popular stations (which account for ~80% of demand).
 
-**Multiple Linear Regression** allows us to test all predictors together. It answers: *"When universities have the same SUS, does ER still predict AR?"*
+**Net Flow = Trips Starting at Station – Trips Ending at Station**
 
-#### What the Regression Shows for Q2–Q3:
+- 🔵 **Positive net flow (blue):** More bikes leave than arrive → **shortage risk** → station needs bike delivery
+- 🔴 **Negative net flow (red):** More bikes arrive than leave → **overflow risk** → station needs bike removal
 
-- **Employer Reputation (ER)** → remains a strong positive driver of AR, especially in Q3
-- **Sustainability (SUS)** → positive influence, strongest in Q2
-- **Citations per Faculty (CPF)** → weak or negative, meaning research output alone does not raise AR outside top-tier schools
-- **R² ~ 0.30–0.35** → these 3 factors explain about one-third of the variation in AR
+![Station Imbalance Map](citychart2.png)
+
+**Key Findings:**
+- **Midtown stations** (Broadway, Madison Ave, West End Ave) show persistent shortages
+- **Downtown stations** (Old Slip & South St, Washington Square E) accumulate bikes and frequently overflow
+
+**Action:**  
+By relocating bikes from overflowing red stations to shortage blue stations, CitiBike can:
+- Reduce shortages and full-dock issues
+- Improve rider experience
+- Reduce redistribution truck mileage
 
 ---
 
-## Main Insights & Recommendations
+### 3. Predictive Rebalancing Strategy
 
-### For Universities (Q2–Q3)
+This analysis shows dynamic bike redistribution needs based on actual usage patterns. By analyzing net flow at each station, we predict where bikes need delivery or collection.
 
-**Employer Reputation (ER) — 15% weight**  
-Since ER makes up 15% of the weight, focusing on employability gives non-elite schools a potential path to strengthening their reputation.
+We computed the **80th percentile (top 20%) activity threshold** for each month, focusing on operationally critical stations where rebalancing decisions matter most.
 
-**Citations per Faculty (CPF) — 20% weight**  
-Although CPF carries a 20% weighting, its influence on reputation outside the top tier appears weaker. A strong research profile is valuable, but may not always reflect the undergraduate experience.
+![Rebalancing Strategy](citychart3.png)
 
-**Sustainability (SUS) — 5% weight**  
-Despite only 5% weighting, because it is new and less saturated, schools that actively engage in sustainability may benefit more. This indicator signals a university's forward-looking values.
+**Operational Strategy:**
 
-### For Undergraduate Students
+Schedule rebalancing trucks **1 hour before peak times:**
+- **Morning prep (6–7 AM):** Position bikes at residential/transit hubs before commute
+- **Afternoon prep (4–5 PM):** Position bikes at business districts before evening rush
+- Use this data to create optimized collection/delivery routes
+- Monitor real-time for weather, events, or anomalies
 
-When evaluating non-elite universities, consider:
+**Cost-Benefit:**
+- Prevents lost revenue from empty stations (unsatisfied demand)
+- Prevents operational issues from overflow (bikes blocking sidewalks)
+- Improves customer satisfaction (bikes available when/where needed)
 
-1. **Career outcomes** — How do employers view the university?
-2. **Sustainability initiatives** — Does the school align with your values around ESG?
-3. **Research reputation** — While important, it may be less indicative of undergraduate experience at mid-tier schools
+---
+
+### 4. Waterfront Expansion Opportunities
+
+We explored spatial demand clusters along Hudson and East Rivers to identify where new stations could relieve congestion and serve riders. This analysis applies a **supply-demand framework** to identify capacity gaps.
+
+**Methodology:**
+
+**Define Waterfront Zones** using Waterfront Access Plans (WAPs):
+- Hunters Point
+- Newtown Creek
+- Harlem River (Core, North, South)
+- Inwood
+- Flushing
+- Gowanus Canal
+
+**Supply-Demand Gap Analysis:**
+- **Supply:** % of stations within 400m of shoreline in WAP zones
+- **Demand:** % of trips starting/ending in these zones
+- **Gap:** Areas where demand exceeds supply
+
+![Waterfront Zones](citychart4.png)
+
+---
+
+### Supply Analysis (Shoreline-Based)
+
+- **Total stations:** 1,757
+- **Waterfront stations (≤ 400m):** 268
+- **Waterfront supply share:** 15.3%
+
+![Supply Share](citychart5.png)
+
+---
+
+### Top Waterfront Origin → Destination Flows
+
+The Sankey diagram below highlights the top 20 waterfront routes with highest trip counts. Each connection represents major flow between two waterfront stations, indicating pressure zones where additional docks could balance supply and ease congestion.
+
+![Waterfront Flows Sankey](citychart6.png)
+
+---
+
+### Origin–Destination Matrix — Top Waterfront Routes
+
+The matrix below shows trip volumes between the busiest waterfront station pairs. Darker cells indicate stronger flow intensity (higher trip counts).
+
+![OD Matrix](citychart7.png)
+
+---
+
+## Recommendations
+
+### Waterfront Expansion
+
+**Finding:**  
+Waterfront stations make up only **15.3%** of the network, while nearly **24%** of all trips start or end near the riverside. This indicates a **demand–supply gap of ~9 percentage points**.
+
+**Action Plan:**
+
+1. **Add new docking stations** along Hudson River and East River
+2. **Prioritize high-pressure OD corridors** highlighted in the Sankey diagram:
+   - Soissons Landing ↔ Vesey St & Church St
+   - Roosevelt Island ↔ Pier 40 — Hudson River Park
+3. **Focus on Public Access Zones:** Hunters Point, Newtown Creek, Harlem River areas, Inwood, Flushing, Gowanus Canal
+4. **Deploy stations before peak-demand months** (May–September)
+
+**Expected Impact:**
+- Reduce bike shortages at popular leisure and commuter waterfront routes
+- Improve accessibility for weekend and tourist riders
+- Balance network capacity between inner-city and riverside zones
+
+---
+
+### Rebalancing Operations
+
+1. Implement predictive rebalancing 1 hour before peak times
+2. Focus redistribution on top 14% routes (80% of demand)
+3. Prioritize Midtown deliveries and Downtown collections
+4. Use real-time monitoring to adjust for weather and events
 
 ---
 
 ## Project Files
 
-- 📊 [View Analysis Notebook](link-to-notebook)
-- 📈 [Tableau Dashboard](link-to-tableau)
-- 📁 [Dataset](link-to-data)
+- 📊 [View Analysis Notebook](#)
+- 📈 [Streamlit Dashboard](#)
+- 📁 [Dataset & Code](#)
 
 ---
 
@@ -122,33 +189,6 @@ When evaluating non-elite universities, consider:
 
 Feel free to reach out if you have questions about this analysis!
 
-- **LinkedIn:** [Your Profile](#)
-- **Email:** your.email@example.com
-- **Portfolio:** [yourwebsite.com](#)
-### 1. Suggest hypotheses about the causes of observed phenomena
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
-
-### 2. Assess assumptions on which statistical inference will be based
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
-
-### 3. Support the selection of appropriate statistical tools and techniques
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
-### 4. Provide a basis for further data collection through surveys or experiments
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- **LinkedIn:** [linkedin.com/in/gaffarova](https://www.linkedin.com/in/gaffarova/)
+- **GitHub:** [github.com/olgagaffarova](https://github.com/olgagaffarova)
+- **Email:** hola.gaffarova@gmail.com
