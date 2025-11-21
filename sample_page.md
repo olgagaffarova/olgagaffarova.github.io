@@ -16,15 +16,6 @@ According to the QS methodology, the **Discovery and Research lens** carries the
 
 ---
 
-## Analysis Method
-- **Python** (pandas, NumPy, matplotlib, seaborn, plotly, scikit-learn, statsmodels) for analysis & visualization
-- Data cleaning, merging & creation of derived variables
-- Exploratory Data Analysis (EDA) to uncover trends & patterns
-- **Tableau** for interactive dashboards
-- **Excel** for supplementary analysis
-
----
-
 ## Key Findings
 ### 1. Understanding University Quartiles
 
@@ -88,5 +79,13 @@ When evaluating non-elite universities, consider:
 
 ---
 
+## Analysis Method
+- **Python** (pandas, NumPy, matplotlib, seaborn, plotly, scikit-learn, statsmodels) for analysis & visualization
+- Data cleaning, merging & creation of derived variables
+- Exploratory Data Analysis (EDA) to uncover trends & patterns
+- **Tableau** for interactive dashboards
+- **Excel** for supplementary analysis
+
+---
 ## Project Files
 For more details see [GitHub Flavored Markdown](https://github.com/olgagaffarova/QS-University-Rankings-2026).
