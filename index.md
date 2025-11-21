@@ -2,7 +2,7 @@
 
 ---
 
-### QS World University Rankings 2026
+### University Rankings Indicators Analysis
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <img src="images/qs2.png" alt="QS Project" style="width:180px; margin-top:5px;">
@@ -19,7 +19,7 @@
 
 ---
 
-### Citibike Strategy
+### New York City Bike-sharing system Analysis
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <img src="images/citibike3.png" alt="CitiBike Project" style="width:180px; margin-top:5px;">
