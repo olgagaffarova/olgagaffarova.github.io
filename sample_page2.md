@@ -1,7 +1,5 @@
 # CitiBike NYC 2022 Ridership Analysis
 
-**Dashboard in Streamlit:** https://citibike2022.streamlit.app/
-
 ## Project objective
 This analysis examines CitiBike's 2022 ridership to improve bike availability, optimize fleet management, and identify expansion opportunities across New York City.
 
