@@ -16,8 +16,7 @@ According to the QS methodology, the **Discovery and Research lens** carries the
 
 ---
 
-## Key Findings
-### 1. Understanding University Quartiles
+### Understanding University Quartiles
 
 ![University Quartiles Analysis](images/chart1.png)
 
@@ -31,7 +30,7 @@ We created correlation heatmaps to see how different QS scores relate to each ot
 
 ---
 
-### 2. Key Drivers of Academic Reputation Beyond the Top Tier
+### Key Drivers of Academic Reputation Beyond the Top Tier
 
 ![Correlation Analysis](images/chart2.png)
 
@@ -45,14 +44,13 @@ Captures research output and visibility — average citations per academic staff
 
 ---
 
-### 3. Regression Analysis Results
+### Regression Analysis Results
 
 ![Regression Analysis](images/chart3.png)
 
 **Multiple Linear Regression** allows us to test all predictors together. It answers: *"When universities have the same SUS, does ER still predict AR?"*
 
 #### What the Regression Shows for Q2–Q3:
-
 - **Employer Reputation (ER)** → remains a strong positive driver of AR, especially in Q3
 - **Sustainability (SUS)** → positive influence, strongest in Q2
 - **Citations per Faculty (CPF)** → weak or negative, meaning research output alone does not raise AR outside top-tier schools
@@ -72,7 +70,6 @@ Although CPF carries a 20% weighting, its influence on reputation outside the to
 Despite only 5% weighting, because it is new and less saturated, schools that actively engage in sustainability may benefit more. This indicator signals a university's forward-looking values.
 
 ### For Undergraduate Students
-
 When evaluating non-elite universities, consider:
 1. **Career outcomes** — How do employers view the university?
 2. **Sustainability initiatives** — Does the school align with your values around ESG?
