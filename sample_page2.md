@@ -22,7 +22,7 @@ To identify key corridors carrying most system traffic, we applied Pareto analys
 - Compute cumulative % to find where 80% of trips is reached
 
 **Result:**  
-Only **14% of all routes account for 80% of total CitiBike trips**.
+**Only 14% of all routes account for 80% of total CitiBike trips**.
 
 ![Main CitiBike Routes](images/citychart1.png)
 
