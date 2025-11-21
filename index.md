@@ -34,11 +34,3 @@
     </p>
   </div>
 </div>
----
-[Project 3 Title](/sample_page3)
-<img src="images/citibike.jpg?raw=true"/>
-
----
-
-
---
