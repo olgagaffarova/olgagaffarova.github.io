@@ -43,7 +43,7 @@
   <img src="images/influenza.jpg" alt="Influenza Planning" style="width:180px; margin-top:5px;">
 
   <div>
-    <a href="/sample_page3"><strong>A Data-Driven Approach to Influenza Planning  Season 2018-2019 in the USA</strong></a>
+    <a href="/sample_page3"><strong>A Data-Driven Approach to Influenza Planning  Season in the USA</strong></a>
     <p>
       Medical staffing agencies need to deploy temporary workers efficiently across all 50 states during flu season. This project analyzes CDC mortality data from 2009–2017 to identify when and where demand is likely to peak. By evaluating both total deaths and per-capita mortality rates, I pinpointed high-priority states and recommended a phased regional deployment strategy aligned with seasonal flu patterns. The findings were visualized in a Tableau storyboard. 
     </p>
