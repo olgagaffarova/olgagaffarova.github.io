@@ -37,15 +37,15 @@
 
 ---
 
-### Influenza Planning in the USA
+### Influenza Planning in the United States
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <img src="images/influenza.jpg" alt="Influenza Planning" style="width:180px; margin-top:5px;">
 
   <div>
-    <a href="/sample_page3"><strong>A Data-Driven Approach to Influenza Planning  Season 2018-2019 in the United States</strong></a>
+    <a href="/sample_page3"><strong>A Data-Driven Approach to Influenza Planning  Season 2018-2019 in the USA</strong></a>
     <p>
-      This project aims to help a medical staffing agency that provides temporary workers to clinics and hospitals in each of the 50 states of the United States on an as-needed basis  to be prepared for the upcoming influenza season. We will determine when to send staff, and to what states in the U.S. 
+      Medical staffing agencies need to deploy temporary workers efficiently across all 50 states during flu season. This project analyzes CDC mortality data from 2009–2017 to identify when and where demand is likely to peak. By evaluating both total deaths and per-capita mortality rates, I pinpointed high-priority states and recommended a phased regional deployment strategy aligned with seasonal flu patterns. The findings were visualized in a Tableau storyboard. 
     </p>
   </div>
 </div>
