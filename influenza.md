@@ -1,5 +1,4 @@
-# A Data-Driven Approach to Influenza Planning
-## Season 2018-2019 in the United States
+# A Data-Driven Approach to Influenza Planning Season 2018-2019 in the United States
 
 ## Project Objective
 This project aims to help a medical staffing agency that provides temporary workers to clinics and hospitals in each of the 50 states of the United States on an as-needed basis to be prepared for the upcoming influenza season. We will determine when to send staff and to which states in the U.S.
