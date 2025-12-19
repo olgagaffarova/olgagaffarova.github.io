@@ -139,4 +139,8 @@ Visualization: Streamlit (Dashboard), Python (Kepler Maps, Matplotlib, Seaborn, 
 Libraries: pandas, NumPy, scikit-learn, statsmodels
 
 ## Project Files
-For more details see [GitHub Project Folder](https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022).
+
+## Project Files
+
+For more details, see [Streamlit Project Storyboard](https://citibike2022.streamlit.app/)
+and [GitHub Project Folder](https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022).
