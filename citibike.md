@@ -140,7 +140,5 @@ Libraries: pandas, NumPy, scikit-learn, statsmodels
 
 ## Project Files
 
-## Project Files
-
-For more details, see [Streamlit Project Storyboard](https://citibike2022.streamlit.app/)
+For more details, see [Streamlit Dashboard](https://citibike2022.streamlit.app/)
 and [GitHub Project Folder](https://github.com/olgagaffarova/New-York-s-CitiBike-trips-in-2022).
